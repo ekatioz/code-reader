@@ -1,0 +1,11 @@
+{
+  "name": "code-reader",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "initCerts": "mkdir -p certs && sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./certs/cert.key -out ./certs/cert.crt",
+    "start": "docker-compose -d up"
+  },
+  "author": "",
+  "license": "ISC"
+}
